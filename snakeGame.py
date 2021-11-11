@@ -1,6 +1,12 @@
 import pygame
 pygame.init()
-dis=pygame.display.set_mode((800,600))
+dis=pygame.display.set_mode((600,400))
 pygame.display.update()
+pygame.display.set_caption('SnakeGame by Manuel Monroy')
+game_over=False
+while not game_over:
+    for event in pygame.event.get():
+        print(event)   #Mostramos en consola todas las acciones que suceden en pantalla
+ 
 pygame.quit()
 quit()
